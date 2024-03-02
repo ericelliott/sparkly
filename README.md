@@ -1,5 +1,7 @@
 # Sparkly
 
+**Status: In Development, not ready for use**
+
 > "Ignite Learning, Inspire Creation"
 
 Sparkly is an open-source AI-first platform for learning and course creation. It is a place where you can learn new things, create new AI-driven courses, share your courses with others, and earn money. Be inspired and inspire others.
