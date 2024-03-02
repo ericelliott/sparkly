@@ -1,0 +1,53 @@
+meta:
+  projectName: Sparkly
+  Agent: SudoBuilder
+description: Sparkly is an open-source AI-first platform for learning and course creation. It is a place where you can learn new things, create new AI-driven courses, share your courses with others, and earn money. Be inspired and inspire others. Our motto is "Ignite Learning, Inspire Creation".
+techStack: Next.js, React, Redux, LLM (beginning with OpenAI GPT-4), image generator
+projectGoals: Allow educators to earn a living by teaching and inspiring passionate learners with the help of AI.
+userJourneys:
+  - journeyId: quickstart-registration-and-introduction
+    name: Quickstart Registration and Introduction
+    description: This journey outlines the steps a new user takes to register on Sparkly using Magic Connect for a smooth, secure authentication experience, setting the stage for their involvement with the platform.
+    steps:
+      - stepId: landing-on-sparkly
+        name: Landing on Sparkly
+        description: User lands on Sparkly homepage and is greeted with an overview.
+        stories: []
+      - stepId: authenticate-with-magic-connect
+        name: Authenticate with Magic Connect
+        description: User chooses to sign up and is guided through the Magic Connect authentication workflow.
+        stories:
+          - authenticate-with-magic-connect
+      - stepId: welcome-and-initial-engagement
+        name: Welcome and Initial Engagement
+        description: Successfully authenticated user is welcomed and briefly guided on how to explore Sparkly.
+        stories:
+          - receive-platform-overview
+    personas:
+      - Educators and Content Creators
+      - Learners
+      - Developers and Tech Enthusiasts
+      - Entrepreneurs and Freelancers
+stories:
+  authenticate-with-magic-connect:
+    storyId: authenticate-with-magic-connect
+    name: Authenticate with Magic Connect
+    description: As a new user, when I sign up, I want to authenticate using Magic Connect, so that I can securely access Sparkly without needing a password.
+    tasks: []
+    journeys:
+      - quickstart-registration-and-introduction
+  receive-platform-overview:
+    storyId: receive-platform-overview
+    name: Receive Platform Overview
+    description: As a newly registered user, I want to receive a brief overview of what I can do on Sparkly, so that I feel welcomed and know where to start exploring.
+    tasks: []
+    journeys:
+      - quickstart-registration-and-introduction
+tasks: {}
+taskQueue: []
+longTermMemory: []
+shortTermMemory: []
+projectStatus:
+  recentlyFinished: ""
+  currentFocus: Defining user journeys and creating user stories for new user registration and initial platform engagement.
+agents: ReactDeveloper ReduxDeveloper APIDesigner GraphQLExpert AIWhisperer Illustrator Photographer MotionDesigner UserResearcher

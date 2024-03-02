@@ -2,19 +2,36 @@
   "name": "sparkly",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint-no-fix": "next lint",
+    "lint": "echo 'Linting...' && next lint --fix && echo 'Lint complete'.",
+    "test": "node -r @swc/register src/test.js && npm run -s lint-no-fix",
+    "test-color": "node -r @swc/register src/test.js | tap-nirvana",
+    "watch": "watch 'clear && npm run -s test-color && npm run -s lint' src"
   },
+  "pre-commit": [
+    "lint",
+    "test-color"
+  ],
   "dependencies": {
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "@swc/core": "^1.4.2",
+    "@swc/register": "^0.1.10",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.2.5",
+    "riteway": "^7.1.0",
+    "tap-nirvana": "^1.1.0",
+    "watch": "^1.0.2"
   }
 }
