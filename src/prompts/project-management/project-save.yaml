@@ -2,7 +2,7 @@ meta:
   projectName: Sparkly
   Agent: SudoBuilder
 description: Sparkly is an open-source AI-first platform for learning and course creation. It is a place where you can learn new things, create new AI-driven courses, share your courses with others, and earn money. Be inspired and inspire others. Our motto is "Ignite Learning, Inspire Creation".
-techStack: Next.js, React, Redux, LLM (beginning with OpenAI GPT-4), image generator
+techStack: Next.js, React, Redux, LLM (beginning with OpenAI GPT-4), Magic.link for passwordless authentication and transactions, Supabase
 projectGoals: Allow educators to earn a living by teaching and inspiring passionate learners with the help of AI.
 userJourneys:
   - journeyId: quickstart-registration-and-introduction
